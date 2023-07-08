@@ -1,0 +1,75 @@
+.app-list-item {
+    font-size: 1.25rem;
+}
+
+.app-list-item button {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.app-list-item button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.app-list-item .btn-star {
+    color: #ffd700;
+    transition: .3s ease-in;
+
+}
+
+.app-list-item .btn-trash {
+    color: red;
+    transition: .3s ease-in;
+
+}
+
+.app-list-item .fa-heart {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+    color: red;
+    opacity: 0;
+    transition: .3s ease-in;
+    /* display: none; */
+}
+
+.app-list-item-label {
+    display: block;
+    line-height: 35px;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.app-list-item.like .fa-heart {
+    opacity: 1;
+    /* display: block; */
+    transition: .3s ease-in;
+}
+
+.app-list-item.important .app-list-item-label {
+    color: #ffd700;
+    transition: .3s ease-in;
+
+}
+
+.app-list-item.important .btn-star {
+    color: #aeaeae;
+    transition: .3s ease-in;
+
+}
+
+.app-list-item.like span{
+    color: rgb(40, 170, 68);
+    font-weight: 700;
+
+}
